@@ -17,4 +17,33 @@ Notes:
 
 def last(a, n):
     # Your code here
+    if n > len(a):
+        return "invalid"
+    elif n < 1:
+        return []
+
+    # Print the last N element?
+    return a[ -n : ]
+
+
+my_list = [4, 3, 9, 9, 7, 6]
+
+print (last(my_list, 5))
+
+# accessing one individual element
+print(my_list[4])
+
+# access the last element in the list 
+print(my_list[-1])
+
+
+# Getting Subarrays
+# get the first 3 element 
+print(my_list[0:3])
+print(my_list[1:5])
+print(my_list[:3])
+print(my_list[0:])
+
+# create a list
+print(my_list[:])
 
